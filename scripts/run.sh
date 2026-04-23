@@ -31,3 +31,11 @@ echo "=============================="
 echo " Disassembly (ARM)"
 echo "=============================="
 arm-linux-gnueabi-objdump -d $ARM_BIN | head -n 40
+
+echo
+echo "Instruction count (RISC-V):"
+riscv64-linux-gnu-objdump -d $RISCV_BIN | grep -c "^\s"
+
+echo
+echo "Instruction count (ARM):"
+arm-linux-gnueabi-objdump -d $ARM_BIN | grep -c "^\s"
