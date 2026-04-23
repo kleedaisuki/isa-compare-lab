@@ -61,3 +61,12 @@ dkms.conf
 # documents
 
 /docs
+
+# Codex
+
+/AGENTS.md
+
+# IDE
+
+/.vscode
+
